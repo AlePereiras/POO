@@ -1,0 +1,59 @@
+body{
+    /* background-color: #262732;  */
+    background-color: #111116;
+    /* border: solid 2px #ff0000;   */
+}
+
+.container-musicas{
+    display: flex;
+    flex-direction: column;
+    /* Quebra a linha quando os elementos filhos não couberem em uma linha */
+    flex-wrap: wrap;  
+    
+    gap: 12px; /* Espaçamento entre os elementos filhos. */
+}
+
+
+.card{
+    display: flex;
+    gap: 20px;
+
+    border-radius: 8px; /* Arredonda as quinas */
+    box-shadow: 2px 2px 16px #000000; /*Sombra*/
+    
+    padding: 12px; /* Espaçamento entre a borda e o conteúdo interno. */
+
+    background-color: #1d1e25;
+    
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card:hover{
+    box-shadow: 4px 8px 16px #FFC60088;
+}
+
+
+
+.card img{
+    width: 200px; /* Largura */
+    height: 200px;
+    object-fit: cover;
+}
+.card .info{
+    display: flex;
+    flex-direction: column;
+}
+.info .nome{
+    color: #ffffff;
+
+}
+
+.info .album{
+    color: #e15757;
+}
+
+.info .artistas{
+    color: #a4a6b8;
+    font-size: 16pt;
+}
