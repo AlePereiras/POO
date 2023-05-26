@@ -1,19 +1,22 @@
 class Musica {
-    constructor(poster,nome, artistas, album, spotify){
+    constructor(poster,nome, artistas, album, spotify, yotube){
         this.poster = poster;
         this.nome = nome;
         this.artistas = artistas;
         this.album = album;
         this.spotify = spotify;
+        this.yotube = yotube;
+        
     }
 }
 
 class musica {
-    constructor(){
-        this.poster = "";
-        this.nome = "";
-        this.artistas = "";
-        this.album = "";
-        this.spotify = "";
+    constructor(poster, nome, artistas, album, spotify, yotube){
+        this.poster = poster;
+        this.nome = nome;
+        this.artistas = artistas;
+        this.album = album;
+        this.spotify = spotify;
+        this.yotube = yotube;
     }
 }

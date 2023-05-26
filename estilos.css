@@ -23,7 +23,7 @@ body{
     
     padding: 12px; /* Espaçamento entre a borda e o conteúdo interno. */
 
-    background-color: #1d1e25;
+    background-color: #020203;
     
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,7 +45,7 @@ body{
     flex-direction: column;
 }
 .info .nome{
-    color: #ffffff;
+    color: #a73737;
 
 }
 
@@ -54,6 +54,6 @@ body{
 }
 
 .info .artistas{
-    color: #a4a6b8;
+    color: #3a49cf;
     font-size: 16pt;
 }

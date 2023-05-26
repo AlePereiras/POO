@@ -3,16 +3,18 @@ let musica1 = new Musica(
     "Kill Bill",
     "SZA",
     "SOS",
-    "https://open.spotify.com/embed/track/1Qrg8KqiBpW07V7PNxwwwL?utm_source=generator"
+    "https",
+    "https://www.youtube.com/embed/cb7lRInEa6c"
 );
 
-let musica2 = new Musica();
-musica2.poster = "";
-musica2.nome = "Tally";
-musica2.artistas = "BLACKPINK";
-musica2.album = "BORN PINK";
-musica2.spotify = "https://open.spotify.com/embed/track/0bYVPJvXr8ACmw313cVvhB?utm_source=generator";
-
+let musica2 = new Musica(
+    "foto.jpg",
+    "Tally",
+    "BLACKPINK",
+    "BORN PINK",
+    "https:",
+    "https://www.youtube.com/embed/Sd6sP6-BgoY"
+);
 
 /*
 let musica20 = new Musica();
@@ -85,9 +87,24 @@ let musica10 = {
 */
 
 let listaDeMusicas = []
-listaDeMusicas.push(musica1 ,musica2)
+listaDeMusicas.push(musica1, musica2)
 
 for(let i = 0; i < listaDeMusicas.length; i++){
+document.write(
+`<iframe 
+src= ${listaDeMusicas[i].yotube}
+width="560" 
+height="315"  
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen
+>
+
+</iframe>`
+)
+}
+    /*
     document.write(
         `<div class='card'>
             <iframe src="${listaDeMusicas[i].spotify}">
@@ -95,3 +112,5 @@ for(let i = 0; i < listaDeMusicas.length; i++){
         </div>`
     )
     }
+    
+    */
