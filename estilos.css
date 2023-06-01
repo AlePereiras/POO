@@ -1,7 +1,7 @@
-.container-cards{
+#container-cards{
     display: flex;
-   /* gap: 30px; */
-  /* flex-direction: row; */
+    gap: 30px; 
+   flex-direction: row; 
 }
 
 .card{
