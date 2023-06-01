@@ -4,7 +4,7 @@ let musica1 = new Musica(
     "SZA",
     "SOS",
     "https",
-    "https://www.youtube.com/embed/cb7lRInEa6c"
+    "https://www.youtube.com/embed/hyceWezZ3PI"
 );
 
 let musica2 = new Musica(
@@ -15,6 +15,23 @@ let musica2 = new Musica(
     "https:",
     "https://www.youtube.com/embed/Sd6sP6-BgoY"
 );
+
+
+// Criando os objetos da playlist
+let minhaPlaylist = new Playlist();
+let playlistDeFulano = new Playlist();
+
+//Adicionando musicas na minhaPlaylist
+minhaPlaylist.adicionarMusica(musica1);
+minhaPlaylist.adicionarMusica(musica2);
+
+//Adicionando musicas na playlistDeFulano
+playlistDeFulano.adicionarMusica(musica2);
+
+// Imprimindo os objetos playlist no console
+console.log(minhaPlaylist);
+console.log(playlistDeFulano);
+
 
 /*
 let musica20 = new Musica();
@@ -84,8 +101,7 @@ let musica10 = {
     album:'Lado B Lado A',
     spotify: ''
 }
-*/
-
+------------------------------------------------------------------------------------------------------------------------
 let listaDeMusicas = []
 listaDeMusicas.push(musica1, musica2)
 
@@ -104,7 +120,7 @@ allowfullscreen
 </iframe>`
 )
 }
-    /*
+-----------------------------------------------------------------------------------------------
     document.write(
         `<div class='card'>
             <iframe src="${listaDeMusicas[i].spotify}">
