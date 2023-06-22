@@ -24,11 +24,11 @@ class Elevador {
         this._andarAtual = andarDeDestino;
 
         console.log("============================ MOVIMENTAÇÃO. Agora o elevador está no andar " + this._andarAtual + ".")
-    
+                                           
         const passageirosSaindo = this._listaDePassageiros.filter(passageiro => passageiro._andarPretendido === this._andarAtual);
         const passageirosContinuam = this._listaDePassageiros.filter(passageiro => passageiro._andarPretendido !== this._andarAtual);
 
-        console.log(passageirosSaindo.length + "passageiros saíram do elevador.")
+        console.log(passageirosSaindo.length + "passageiros saíram do elevador.");
         console.log(passageirosContinuam.length + "passageiros CONTINUAM no elevador.");
 
         this._listaDePassageiros = passageirosContinuam;
